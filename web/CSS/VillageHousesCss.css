@@ -1,0 +1,1764 @@
+/*
+Omar Abouelazm
+Period: 3
+
+This is the village houses css file that allows for 
+the village houses website to be formatted and decorated. 
+Manages the appeal and look of the website.
+*/
+
+/* Sets and decorates the body of all the pages on the website */
+body
+{
+    font-family: 'Dosis', chalkboard, sans-serif;
+    background-color: #BBF0F3;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
+.bodyHide
+{
+    overflow-y: hidden;
+}
+/*#dragonBody
+{
+    background-color: #F24236; 
+}
+#thorBody
+{
+    background-color: #5EC643; 
+}
+#valhallaBody
+{
+    background-color: #76140C; 
+}
+#odinBody
+{
+    background-color: #26272C; 
+}
+#vorBody
+{
+    background-color: #4FA6A9; 
+}
+#valkyrieBody
+{
+    background-color: #4AA2E4; 
+}
+#skaldBody
+{
+    background-color: #9875A5; 
+}
+#tyrBody
+{
+    background-color: lightgrey;
+}*/
+
+#messageResult
+{
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: auto;
+}
+
+/*.dragonMessageFormat 
+{
+    text-align: center;
+    color: black;
+}
+.thorMessageFormat 
+{
+    text-align: center;
+    color: black;
+}
+.valhallaMessageFormat 
+{
+    text-align: center;
+    color: white;
+} 
+.odinMessageFormat
+{
+    text-align: center;
+    color: white;
+}
+.vorMessageFormat
+{
+    text-align: center;
+    color: black;
+}
+.valkyrieMessageFormat
+{
+    text-align: center;
+    color: black;
+}
+.skaldMessageFormat
+{
+    text-align: center;
+    color: black;
+}
+.tyrMessageFormat
+{
+    text-align: center;
+    color: black;
+}*/
+
+/* formats all the buttons and fields in the website */
+form
+{
+    display: inline-block;
+}
+/* formats the log in headers in the home page */
+.logInHeaders 
+{
+    /*Edits text*/
+    font-size: 150%;
+    font-style: normal;
+    color: black;
+    
+    font-weight: 500;
+}
+/* formats the announcement headers in the announcement page */
+.announcementHeaders 
+{
+    /*Edits text*/
+    font-size: 150%;
+    font-style: normal;
+    color: black;
+}
+.popUpTextTitle
+{
+    float: left;
+}
+
+/* formats the pop up backgrounds */
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    background-size: 100% 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+.overlay:target
+{
+    transition-duration: 0.5s;
+    visibility: visible;
+    opacity: 1;
+    background-size: 100% 100%;
+    
+    overflow: hidden;
+}
+.overlayVerify
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    background-size: 100% 100%;
+    transition-duration: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    visibility: visible;
+    opacity: 1;
+    background-size: 100% 100%;
+    
+    /*overflow-y: hidden;*/
+}
+
+/*Formats the close button*/
+.close
+{
+    float: right;
+    text-decoration: none;
+}
+.close:active
+{
+    color: black;
+    text-decoration: none;
+}
+.close:visited
+{
+    color: black;
+    text-decoration: none;
+}
+
+/*Formats the pop up types*/
+.popUp
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid #666;
+    max-width: 300px;
+    max-height: 400px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    text-align: center;
+    /*transition-duration: 3s;*/
+    
+    font-family: 'Dosis', sans-serif;
+}
+.popUp2
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid #666;
+    max-width: 300px;
+    max-height: 500px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-right: 8%;
+    padding-left: 8%;
+    /*visibility: hidden;*/ 
+}
+.popUp3
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid #666;
+    max-width: 300px;
+    max-height: 400px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.popUp4
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid #666;
+    max-width: 300px;
+    max-height: 400px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.popUp5
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid #666;
+    max-width: 300px;
+    max-height: 550px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-right: 8%;
+    padding-left: 8%;
+    /*visibility: hidden;*/ 
+}
+#signUpFrame:active .popUp2 
+{
+    visibility: visible;
+}
+#signUpFrame:active .popUp
+{
+    visibility: hidden;
+}
+
+/* formats the header/nav bar of the website*/
+#houseHeader
+{
+   position: fixed;
+   z-index: 3;
+   top: 0;
+   display: inline-block;
+   background-color: white;
+   width: 100%; 
+   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+   opacity: 0.95;
+}
+/*#dragonHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#thorHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#valhallaHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#odinHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#vorHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#valkyrieHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#skaldHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+#tyrHeader
+{
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}*/
+
+/* formats the header/nav bar text of the website*/
+.headerText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 19.5px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: #002435;
+    font-weight: 300;
+}
+/* formats the footer */
+.footer
+{
+    position: fixed;
+    
+    bottom: 0;
+    
+    box-sizing: border-box;
+    width: 100%;
+    
+    padding: 1%;
+    
+    font-size: 180%;
+    
+    z-index: 3;
+    
+    font-weight: 400;
+    
+    background-color: transparent;
+    
+    text-align: center;
+}
+.footerIcons
+{
+    width: auto;
+    height: 60px;
+}
+.footerHeaders
+{
+    font-family: sans-serif;
+    
+    /*Edits text*/
+    font-size: 130%;
+    font-style: normal;
+    color: #002435;
+    
+    text-align: center;
+    
+    font-weight: 500;
+}
+.footerLinks
+{
+    font-size: 80%;
+}
+.imageLink 
+{
+    text-decoration: none;
+    text-align: center;
+}
+/*#dragonHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#thorHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#valhallaHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#odinHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#vorHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#valkyrieHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#skaldHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}
+#tyrHeaderText
+{
+    font-size: 110%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    border: none;
+    padding: 25px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: black;
+}*/
+
+/* formats the header/nav bar buttons of the website*/
+.headerButtons
+{
+    display: inline-block;
+    font-size: 150%;
+    padding: 0px;
+    border: 2px;
+    /*    border: 2px;
+        border-color: yellow;
+        border-style: solid;*/
+}
+/* formats the header/nav bar of the website when hovered over */
+.headerButtons:hover + .headerText
+{
+    display: inline-block; 
+    color: #F45B69;
+}
+.headerText:hover
+{
+    display: inline-block;
+    color: #F45B69;
+}
+
+/* Dropdown Button */
+.dropbtn 
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 160px;
+  z-index: 3;
+  opacity: 1;
+  box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);    
+  border-radius: 0 0 10px 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #002435;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #F45B69;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown-form-text
+{
+    font-size: 100%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent; 
+    border: none;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    color: #002435;
+    font-weight: 400;
+    padding: 12px 16px;
+}
+.dropdown-form:hover  .dropdown-form-text 
+{
+    color: #F45B69;
+}
+
+/*formats links in header */
+.linkLogoText
+{
+    text-align: center;
+    margin-top: 7%;
+    /* margin-bottom: auto; */
+    float: left;
+    margin-left: 2%;
+    font-family: sans-serif;
+}
+.linkHeaderButton
+{
+    text-decoration: none;
+    font-size: 160%;
+    color: #002435;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    
+    font-weight: 300;
+    
+    font-family: 'Dosis', sans-serif;
+}
+.linkHeaderButton:active
+{
+    color: #002435;
+}
+.linkHeaderButton:visited
+{
+    color: #002435;
+}
+
+/* formats the images of the website */
+#villageIconImage
+{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-right: 1%;
+    margin-left: 1%;
+    float: left;
+}
+#settingsIconImage
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+#keyIconImage
+{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin-left: 1%;
+    margin-top: -5%;
+}
+#verificationIconImage
+{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin-left: 1%;
+    margin-top: -5%;
+}
+#calculatorImage
+{
+    display: inline-block;
+    width: 90px;
+    height: 70px;
+    float: right;
+    margin-top: 0.2%;
+}
+#dragonImage
+{
+    display: inline-block;
+    width: 38px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+#odinImage
+{
+    display: inline-block;
+    width: 102px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 0.7%;
+    margin-left: 1%;
+}
+#skaldImage
+{
+    display: inline-block;
+    width: 59px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+#thorImage
+{
+    display: inline-block;
+    width: 49px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+#valhallaImage
+{
+    display: inline-block;
+    width: 74px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+#valkyrieImage
+{
+    display: inline-block;
+    width: 47px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+#vorImage
+{
+    display: inline-block;
+    width: 45px;
+    height: 65px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1.2%;
+    margin-left: 1%;
+}
+#helpIconImage
+{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    float: right;
+    margin-top: 0.2%;
+    margin-right: 1%;
+}
+#generalHelpImage
+{
+    width: 180px;
+    height: 180px;
+}
+#informationLogoImage
+{
+    width: 255px;
+    height: 195px;
+}
+#userIconImage
+{
+    width: 180px;
+    height: 180px;
+}
+
+/* formats the title of all the pages in the website */
+#title
+{
+    text-align: center;
+    font-size: 350%;
+    font-weight: 700;
+    color: #002435;
+    
+    font-family: sans-serif;
+}
+#dragonTitle
+{
+    text-align: center;
+}
+#thorTitle
+{
+    text-align: center;
+}
+#valhallaTitle
+{
+    text-align: center;
+    color: white;
+}
+#odinTitle
+{
+    text-align: center;
+    color: white;
+}
+#vorTitle
+{
+    text-align: center;
+}
+#valkyrieTitle
+{
+    text-align: center;
+}
+#skaldTitle
+{
+    text-align: center;
+}
+#tyrTitle
+{
+    text-align: center;
+}
+
+/* formats the about headers in the about page */
+.aboutHeaders 
+{
+    font-family: sans-serif;
+    
+    /*Edits text*/
+    font-size: 130%;
+    font-style: normal;
+    color: #002435;
+    
+    font-weight: 500;
+}
+
+/* formats the slide show block in the home page */
+#aboutSlidesBlock
+{
+    box-sizing: border-box;
+    
+/*    background-color: #DDFFF7;*/
+    width: 600px;
+    height: 433px;
+    overflow: hidden;
+    
+    max-width: 900px;
+
+    border-style: solid;
+    border-width: 4px;
+    border-bottom-width: 6px;
+    border-color: #104F55;
+    /*padding: 12px;*/
+    float: left;
+    
+    font-size: 130%;
+
+    text-align: center;
+}
+.slideImage 
+{
+    width: 600px;
+    height: 433px;
+    
+    max-width: 900px;
+/*    display: inline-block;*/
+}
+#sliderBox img
+{
+    float: left;
+}
+
+/* formats the help headers in the help page */
+.helpHeaders
+{
+    /*Edits text*/
+    text-decoration: underline;
+    font-size: 150%;
+    font-style: normal;
+}
+
+.resultBlock
+{
+    margin-left: 2%;
+    text-align: center;
+}
+/* formats all the tables in the website */
+td
+{
+    text-align: center;
+}
+#verifyAccountInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 110%;
+    margin-left: -5%;
+}
+/* formats the email information within the log in page */
+#emailInformation
+{
+    font-size: 140%;
+    color: black;
+}
+/* formats the profile information within the log in page */
+#profileInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 110%;
+    margin-left: -4%;
+}
+/* formats the sign up information within the sign up page */
+#signUpInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 120%;
+    margin-left: -10%;
+}
+/* formats the new password information within the sign up page */
+#newPasswordInformation
+{
+    margin-left: 38%;
+    font-size: 140%;
+}
+/* formats the announcement information within the log in page */
+#announcementInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* formats the poll information within the log in page */
+#pollInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* formats the settings information within the log in page */
+#settingsInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 110%;
+    margin-left: -5%;
+}
+/* formats the feedback information within the log in page */
+#feedbackInformation
+{
+    font-size: 140%;
+    color: black;
+    width: 110%;
+    margin-left: -5%;
+}
+/* formats the forgot password format within the log in page */
+.forgotPasswordFormat
+{
+    display: inline-block;
+    font-size: 100%;
+    text-decoration: none;
+    border: solid;
+    background-color: pink;
+    color: black;
+    padding: 10px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    display: inline-block;
+    border-radius: 20%;
+    transition-duration: 0.5s;
+}
+.forgotPasswordFormat:hover
+{
+   border: solid; 
+   border-color: black;
+   background-color: red;
+   color: white;
+}
+/* formats the verify account format within the log in page */
+.verifyAccountFormat
+{
+    display: inline-block;
+    font-size: 100%;
+    text-decoration: none;
+    border: solid;
+    background-color: #90ee90;
+    color: black;
+    padding: 10px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    display: inline-block;
+    border-radius: 20%;
+    transition-duration: 0.5s;
+    
+    font-weight: 500;
+}
+.verifyAccountFormat:hover
+{
+   border: solid; 
+   border-color: black;
+   background-color: green;
+   color: white;
+}
+.forgotPasswordLink
+{
+    font-weight: 300; 
+    text-decoration: none;
+    color: #52489C;
+    text-decoration: underline;
+}
+
+/* formats the link button format */
+.linkButtonFormat
+{
+    display: inline-block;
+    font-size: 160%;
+    text-decoration: none;
+    border: none;
+    background-color: #002435;
+    color: white;
+    padding: 10px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    display: inline-block;
+    border-radius: 7.5px;
+    
+    width: 110px;
+    
+    margin-bottom: auto;
+    margin-top: auto;
+    
+    transition-duration: 0.2s;
+    
+    font-weight: 500;
+    
+    text-align: center;
+    
+    margin-left: 18px;
+    
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.linkButtonFormat:hover
+{
+   opacity: 0.9;
+}
+
+/* formats the log in format */
+.logInFormat 
+{
+    display: inline-block;
+    font-size: 100%;
+    text-decoration: none;
+    border: none;
+    background-color: #002435;
+    color: white;
+    padding: 10px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    display: inline-block;
+    border-radius: 7.5px;
+    
+    width: 200px;
+    
+    transition-duration: 0.2s;
+    
+    font-weight: 500;
+}
+.logInFormat:hover
+{
+   opacity: 0.9;
+}
+
+/*.adminButtons
+{
+    text-align: center;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+}*/
+
+.adminInformation
+{
+    text-align: center;
+}
+
+/* formats the sign up button within the sign up page*/
+.addButton
+{
+    display: inline-block;
+    font-size: 100%;
+    text-decoration: none;
+    border: none;
+    background-color: #52489C;
+    color: white;
+    padding: 10px;
+    font-family: 'Dosis', chalkboard, sans-serif;
+    display: inline-block;
+    border-radius: 7.5px;
+    
+    width: 200px;
+    
+    transition-duration: 0.2s;
+    
+    font-weight: 500;
+}
+.addButton:hover
+{
+   opacity: 0.9;
+}
+
+.dragonButton
+{
+    background-color: pink;
+}
+.dragonButton:hover
+{
+    background-color: #F24236;
+}
+.thorButton
+{
+    background-color: greenyellow;
+}
+.thorButton:hover
+{
+    background-color: green;
+}
+.valhallaButton
+{
+    background-color: pink;
+}
+.valhallaButton:hover
+{
+    background-color: #76140C;
+}
+.odinButton
+{
+    background-color: lightgray;
+}
+.odinButton:hover
+{
+    background-color: #26272C;
+}
+.vorButton
+{
+    background-color: #BCDBD9;
+}
+.vorButton:hover
+{
+    background-color: #4FA6A9;
+}
+.valkyrieButton
+{
+    background-color: lightblue;
+}
+.valkyrieButton:hover
+{
+    background-color: #4AA2E4;
+}
+.skaldButton
+{
+    background-color: #A899CF;
+}
+.skaldButton:hover
+{
+    background-color: purple;
+}
+.tyrButton
+{
+    background-color: lightgrey;
+}
+.tyrButton:hover
+{
+    background-color: grey;
+}
+
+#signUpPosition
+{
+    margin-left: 5%;
+}
+#forgotPasswordPosition
+{
+    margin-left: 5%;
+}
+/* formats the back to log in button within the sign up page*/
+#backLogIn
+{
+    margin-left: -50%;
+}
+/* formats the back to back to home button within the update password page*/
+#backHome
+{
+    margin-left: 45%;
+}
+/* formats the profile image within the sign up and log in page*/
+#profileImage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 200px;
+    height: 200px;
+}
+/* formats the password image within the update password page*/
+#passwordImage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 200px;
+    height: 200px;
+}
+
+/* formats information blocks */
+.informationBlocks 
+{
+    background-color: white;
+    border: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    overflow: auto;
+}
+.informationText 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+    font-size: 130%;
+}
+.informationTitle
+{
+    font-size: 140%;
+    
+    font-weight: 600;
+    
+    font-family: sans-serif;
+}
+
+/* formats feedback */
+.feedbackText
+{
+    text-align: center;
+}
+.feedbackEmailFormat
+{
+    text-align: left;
+    float: left;
+    margin-left: 4%;
+    font-size: 120%;
+    display: inline;
+}
+
+/* creates authorization format*/
+.authorized
+{
+    display: anything;
+}
+.nonAuthorized
+{
+    display: none;
+}
+
+/* formats close button */
+.closeInformation
+{
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.feedbackCloseFormat
+{
+    display: inline-block;
+    display: inline;
+    margin-top: 1.3%;
+}
+.verifyDisplayTrue
+{
+    display: anything;
+}
+#announcementDescription
+{
+    resize: none;
+}
+.pollOptions
+{
+    text-align: left;
+}
+
+/* formats error and success message */
+.errorMessage
+{
+    color: red;
+    font-size: 100%;
+    font-weight: 600;
+}
+.errorFont
+{
+    font-size: 140%;
+}
+.successMessage
+{
+    color: green;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+/* formats text fields */
+#userNameField
+{
+    text-align: left;
+    margin-left: 9%;
+}
+#passwordField
+{
+    text-align: left;
+    margin-left: 9%;
+}
+#emailField
+{
+    text-align: left;
+    margin-left: 10%;
+}
+#firstPasswordField
+{
+    text-align: left;
+    margin-left: 10%;
+}
+#secondPasswordField
+{
+    text-align: left;
+    margin-left: 10%;
+}
+#emailVerificationField
+{
+    text-align: left;
+    margin-left: 11%;
+}
+#verificationCodeField
+{
+    text-align: left;
+    margin-left: 11%;
+}
+#announcementTitleField
+{
+    text-align: left;
+}
+#announcementDescriptionField
+{
+    text-align: left;
+}
+#feedbackField
+{
+    text-align: left;
+    margin-left: 8%;
+}
+.fieldFormat
+{
+    width: 85%;
+    height: 20px;
+    
+    border: 1px solid;
+    border-color: black;
+}
+.lightFormat
+{
+    background-color: white;
+}
+.homeFormat
+{
+    background-color: #DDFFF7;
+}
+#leadershipTable
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#leadershipTable tr td
+{
+    text-align: center;
+    padding-right: 20px;
+}
+
+/*formats footer*/
+.rightFooterBlock
+{
+    float: right;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+}
+.leftFooterBlock
+{
+    float: left;
+    text-align: center;
+    display: inline-block;
+}
+.subFooterHeaders
+{
+    font-family: sans-serif;
+    font-size: 110%;
+    color: #002435;
+    opacity: 0.9;
+}
+.centerBlock 
+{
+    margin-left: auto;
+    margin-right: auto;
+/*    width: 1000px;*/
+}
+#youtubeImage
+{
+    margin-left: 5px;
+}
+
+/*formats house header for mobile and computer*/
+#houseHeader ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+#houseHeader li .linkHeaderButton {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid white;
+  text-decoration: none;
+}
+#houseHeader li .linkHeaderButton:hover {
+  color: #F45B69;
+}
+#houseHeader .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .3s ease-out;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);    
+}
+#houseHeader .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+#houseHeader .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+#houseHeader .menu-icon .navicon:before,
+#houseHeader .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+#houseHeader .menu-icon .navicon:before {
+  top: 5px;
+}
+#houseHeader .menu-icon .navicon:after {
+  top: -5px;
+}
+#houseHeader .menu-btn {
+  display: none;
+}
+#houseHeader .menu-btn:checked ~ .menu {
+  max-height: 600px;
+}
+#houseHeader .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+#houseHeader .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+#houseHeader .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+#houseHeader .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+#houseHeader .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+#househeader .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/*formats link logo */
+.linkLogo
+{
+    margin-top: 0.3%;
+    width: 250px;
+}
+
+/*formats contact links */
+.contactLinks
+{
+    font-weight: 400;
+}
+
+/* formats about website block */
+#aboutWebsiteBlock
+{    
+    box-sizing: border-box;
+    
+    position: relative;
+
+    font-size: 180%;
+
+    text-align: center;
+    
+    width: 100%;
+
+    padding: 4%;
+
+    font-weight: 300;
+    
+    color: #002435;
+    
+    font-family: 'Dosis', sans-serif;
+}
+/*formats slide show */
+#aboutSlidesBlock
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 70%;
+    height: auto;
+}
+/* formats leadership block */
+#leadershipBlock
+{
+    box-sizing: border-box;
+    
+    position: relative;
+
+    font-size: 180%;
+
+    text-align: center;
+    
+    padding: 4%;
+
+    overflow: auto;
+
+    font-weight: 300;
+}
+/* formats contact block */
+#contactHelpBlock
+{
+    box-sizing: border-box;
+    
+    position: relative;
+
+    font-size: 180%;
+
+    text-align: center;
+    
+    padding: 4%;
+
+    overflow: hidden;
+
+    font-weight: 300;
+    
+    font-family: 'Dosis', sans-serif;
+}
+#mainAboutBlock
+{
+    width: auto;
+    height: auto;
+}
+.slideImage 
+{
+    width: 10%;
+    height: auto;
+}
+#sliderBox
+{
+    position: relative;
+    width: 1000%;
+    animation-name: sliderAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes sliderAnimation 
+{
+    0% { left: 0%}
+    20% { left: 0%}
+    25% { left: -100%}
+    45% { left: -100%}
+    50% { left: -200%}
+    70% { left: -200%}
+    75% { left: -300%}
+    95% { left: -300%}
+    100% { left: -400%}
+}
+/* formats buttons */
+.hazardButton
+{
+    background-color: #F24236;
+}
+.redButton
+{
+    background-color: #F45B69;
+}
+.blueButton
+{
+    background-color: #002435;
+}
+.linkFormat
+{
+    text-decoration: none;
+    color: white;  
+    text-align: center;
+}
+.linkFormat:active
+{
+    color: white;
+}
+.linkFormat:visited
+{
+    color: white;
+}
+
+#accountBlock 
+{
+    font-family: sans-serif;
+    
+    font-size: 200%;
+    
+    text-align: center;
+    
+    font-weight: 300; 
+}
+.red-border 
+{
+    width: 15rem;
+    border-bottom: 1.5px solid #F45B69;
+    margin: 0 auto;
+    height: 16px;
+}
+
+/* formats for specific screen size*/
+@media (max-width: 1320px) 
+{
+    #aboutWebsiteBlock
+    {    
+        font-size: 180%;
+
+        text-align: center;
+    }
+    #aboutSlidesBlock
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 70%;
+        height: auto;
+    }
+    #leadershipBlock
+    {
+        font-size: 180%;
+
+        text-align: center;
+    }
+    #contactHelpBlock
+    {
+        font-size: 180%;
+
+        text-align: center;
+    }
+    #mainAboutBlock
+    {
+        width: auto;
+        height: auto;
+    }
+    .slideImage 
+    {
+        width: 10%;
+        height: auto;
+    }
+}
+/* formats for specific screen size*/
+@media (max-width: 750px) 
+{
+    #aboutWebsiteBlock
+    {        
+        font-size: 130%;
+    }
+    #aboutSlidesBlock
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 98%;
+        height: auto;
+    }
+    #leadershipBlock
+    {
+        font-size: 130%;
+    }
+    #contactHelpBlock
+    {
+        font-size: 130%;
+    }
+    .aboutHeaders
+    {
+        font-size: 150%;
+    }
+    
+    #informationLogoImage
+    {
+        width: 170px;
+        height: 130px;
+    }
+}
+/* formats for specific screen size*/
+@media (min-width: 1070px)
+{     
+    #houseHeader li 
+    {
+      float: left;
+    }
+    #houseHeader .menu 
+    {
+      position: relative;
+        
+      clear: none;
+      float: right;
+      max-height: none;
+      width: auto;
+      
+      box-shadow: none;
+    }
+    #houseHeader .menu-icon 
+    {
+      display: none;
+    }
+    .linkButtonFormat 
+    {
+        margin-top: 10px;
+        
+        margin-bottom: auto;
+        
+        margin-right: 25px;
+    }
+}
+/* formats for specific screen size*/
+@media (max-width: 1069px)
+{
+    #houseHeader li .headerText
+    {
+        padding-right: 10000%;
+    }
+}
+/* formats for specific screen size*/
+@media (max-width: 540px)
+{
+    #title
+    {
+        font-size: 250%;
+    }
+}
